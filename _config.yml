@@ -81,7 +81,7 @@ deploy:
   type: git
   repo: git@github.com:sukioosuke/sukioosuke.github.io.git
   branch: master
-  message: fix languages
+  message: new blog
 
 # Feed
 feed:
