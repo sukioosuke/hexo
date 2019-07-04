@@ -11,4 +11,3 @@
 #### 9.hexo server -d
 
 p.s. 若提示WARN  No layout: index.html 应为主题丢失，克隆git clone git@github.com:yscoder/hexo-theme-indigo.git themes/indigo可解决
-
