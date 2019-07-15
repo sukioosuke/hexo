@@ -13,3 +13,4 @@ blog主要用于：
 别人的赏识都是过眼云烟，只有自己的提高进步才是真金白银！
 
 p.s. [在线md编写工具](https://www.zybuluo.com/mdeditor)
+     [LaTex符号](http://www.mohu.org/info/symbols/symbols.htm、https://www.e-learn.cn/content/qita/1391472)
