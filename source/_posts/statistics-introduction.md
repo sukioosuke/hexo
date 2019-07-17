@@ -20,12 +20,12 @@ $$ \mathcal{F}=\{P|P_\theta(Y|X),\theta\in\mathrm{R}^n\} $$
 #### 1.损失函数和风险函数
 常用的损失函数（代价函数）有以下几种：
 > * 0-1损失函数（0-1 loss function）
-$$ L(Y,f(X))=\begin{equation}
-\left\{\begin{aligned}
-1, Y\not=f(X)\\
-0, Y=f(X)\\
-\end{aligned}\right.
-\end{equation} $$
+$$ L(Y,f(X))=
+\begin{cases}
+1, Y\not=f(X) \\
+0, Y=f(X) \\
+\end{cases}
+$$
 > * 平方损失函数（quadratic loss function）
 $$ L(Y,f(X))=(Y-f(X))^2 $$
 > * 绝对损失函数（absolute loss function）
@@ -45,7 +45,7 @@ $$ \min_{f\in\mathcal{F}} \frac{1}{N}\sum_{i=1}^{N}L(y_i,f(x_i)) $$
 但是当样本容量很小时，经验风险最小化学习就可能会出现过拟合现象。
 ##### 2)结构风险最小化（SRM）
 结构风险最小化等价于正则化，有效的防止了过拟合。结构风险在经验风险上加上表示模型复杂度的正则化项或者罚项。结构风险的定义为：
-$$ R_{srm}(f)=\frac{1}{N}\sum_{i=1}^{N}L(y_i,f(x_i))+\lambdaJ(f) $$
+$$ R_{srm}(f)=\frac{1}{N}\sum_{i=1}^{N}L(y_i,f(x_i))+\lambda J(f) $$
 J(f)表示模型的复杂度，$/lamda$是系数，用于权衡经验风险和模型复杂度。即求最优模型，就是求解最优化问题$\min_{f\in\mathcal{F}} R_{srm}F$
 ### 算法
 算法是指学习模型的具体计算方法。统计学习的问题是最优化问题，统计学习算法也就是求解最优化问题的算法。要找到全局最优解，并且求解过程要高效。
